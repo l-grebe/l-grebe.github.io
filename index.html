@@ -17,13 +17,13 @@
   <script>
     window.$docsify = {
       // logo: '_media/grebe.svg',
-      loadSidebar: true,
-      subMaxLevel: 1,
-      // alias: {
-      //   '/.*/_sidebar.md': '/_sidebar.md'
-      // }
       homepage: 'readme.md',
       name: "l-grebe的博客.",
+      loadSidebar: true,
+      subMaxLevel: 1,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
       repo: '',
       plugins: [
         EditOnGithubPlugin.create('https://github.com/l-grebe/l-grebe.github.io/tree/master/', null)
