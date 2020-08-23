@@ -1,4 +1,4 @@
-* [关于我](readme.md)
+* [关于我](aboutme.md)
 * [第一章：开发环境搭建](c01/)
   * [1.1 linux bashrc配置](c01/p01.md)
   * [1.2 ubuntu使用记录](c01/p02.md)
