@@ -3,5 +3,7 @@
   * [1.1 linux bashrc配置](c01/p01.md)
   * [1.2 ubuntu使用记录](c01/p02.md)
   * [1.3 atom配置记录](c01/p03.md)
+  * [1.4 vncserver安装与配置](c01/p04.md)
+  * [1.5 docker minio 部署](c01/p05.md)
 * [第二章：python写法收录](c02/)
-  * [1.1 requests实现多文件传输](c02/p01.md)
+  * [2.1 requests实现多文件传输](c02/p01.md)
