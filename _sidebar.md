@@ -16,3 +16,12 @@
 
 * [第三章：python写法收录](c03/)
   * [3.1 requests实现多文件传输](c03/p01.md)
+
+* [未归类文档](c00/)
+  * [0.1 mac下常用快捷键](c00/p01.md)
+  * [0.2 mac chrome快捷键](c00/p02.md)
+  * [0.3 poker改键记录](c00/p03.md)
+  * [0.4 iTerm设置](c00/p04.md)
+  * [0.5 Fiddler抓http包工具使用](c00/p05.md)
+  * [0.6 git使用相关](c00/p06.md)
+  * [0.7 mac-编译安装vim](c00/p07.md)
