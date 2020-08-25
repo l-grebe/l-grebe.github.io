@@ -2,7 +2,7 @@
 import os
 
 """
-自动生成根目录下._sidebar.md文件脚本
+自动在生成根目录下._sidebar.md文件脚本
 """
 
 
@@ -40,8 +40,10 @@ def list_files(path, level):
         d_path_readme = os.path.join(d_path, 'README.md')
         show_name = get_file_title(d_path_readme)
         show_path = d_path.split('/', 1)[-1] + '/'
-        print(gen_row(show_name, show_path, level), end='')
-        list_files(os.path.join(path, d), level + 1)
+        # print(gen_row(show_name, show_path, level), end='')
+        yield gen_row(show_name, show_path, level)
+        for row in list_files(os.path.join(path, d), level + 1):
+            yield row
     for f in files:
         if f.startswith('.') or f.startswith('_'):
             continue
@@ -52,13 +54,14 @@ def list_files(path, level):
         f_path = os.path.join(path, f)
         show_name = get_file_title(f_path)
         show_path = f_path.split('/', 1)[-1]
-        print(gen_row(show_name, show_path, level), end='')
+        # print(gen_row(show_name, show_path, level), end='')
+        yield gen_row(show_name, show_path, level)
 
 
 def main():
-    list_files('.', 0)
-    # for name in list_files('.', 0):
-    #     print(name)
+    with open('_sidebar.md', 'w') as fd:
+        for row in list_files('.', 0):
+            fd.write(row)
 
 
 if __name__ == '__main__':
