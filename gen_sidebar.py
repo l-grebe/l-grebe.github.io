@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 import os
 
+"""
+自动生成根目录下._sidebar.md文件脚本
+"""
+
 
 def gen_row(show_name: str, show_path: str, level: int):
     return "{}* [{}]({})\n".format("  " * level, show_name, show_path)

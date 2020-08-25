@@ -1,3 +1,4 @@
+# vim插件-Python-mode
 python-mode是封装了pylint、rope、pydoc、pep8和mccabe的vim插件，使用它可以让你快速地完成python的vim开发环境。
 
 github地址：https://github.com/python-mode/python-mode
@@ -38,7 +39,7 @@ let g:pymode_rope = 0
 let g:pymode_doc = 1 " 通过命令:PymodeDoc arg查阅文档
 let g:pymode_doc_key = 'K' "光标移到参数上面按快捷键K
 
-let g:pymode_lint = 1 
+let g:pymode_lint = 1
 let g:pymode_lint_checker = "pyflakes,pep8"
 let g:pymode_lint_write = 1
 let g:pymode_lint_cwindow = 0
@@ -93,6 +94,3 @@ pyline的message_type：
 (E) 错误。很可能是代码中的错误。
 (F) 致命错误。阻止 Pylint 进一步运行的错误。
 ```
-
-
-

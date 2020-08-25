@@ -1,3 +1,5 @@
+# vim插件-NERDTree
+
 NERDTree的作用就是列出当前路径的目录树，可以方便的浏览项目的总体的目录结构和创建删除重命名文件或文件名。
 
 github地址：https://github.com/scrooloose/nerdtree
@@ -7,7 +9,7 @@ github地址：https://github.com/scrooloose/nerdtree
 ##### NERDTree在.vimrc中添加的配置:
 
 ```shell
-"------ Plugin NERDTree 
+"------ Plugin NERDTree
 let NERDTreeWinSize=30 "设置目录展示的宽度
 
 "列出当前目录文件
@@ -73,4 +75,3 @@ B       切换是否显示书签
 q       关闭 NerdTree 窗口
 ?       切换是否显示 Quick Help
 ```
-

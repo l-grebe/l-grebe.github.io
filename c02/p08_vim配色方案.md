@@ -1,3 +1,5 @@
+# vim配色方案
+
 vim配色下载地址：<https://vimcolors.com>
 
 ##### 常用配色方案下载：
@@ -50,6 +52,3 @@ Gray    LightGray       DarkGray
 Black   White
 Orange  Purple          Violet
 ```
-
-
-

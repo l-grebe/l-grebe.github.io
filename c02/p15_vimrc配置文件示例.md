@@ -1,3 +1,5 @@
+# vimrc配置文件示例
+
 ```shell
 set nocompatible                     " 关闭兼容模式
 filetype off                         " 关闭文件类型检测
@@ -561,4 +563,3 @@ autocmd FileType python noremap <buffer> <F6> :call Autopep8()<CR>
 "     exec "e! %"
 " endfunc
 ```
-

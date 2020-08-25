@@ -1,3 +1,4 @@
+# vim插件-YouCompleteMe
 YouCompleteMe是一款vim下的代码补全插件
 
 github地址：<https://github.com/Valloric/YouCompleteMe>
@@ -30,7 +31,7 @@ youcompleteMe官方文档：<https://github.com/Valloric/YouCompleteMe/blob/mast
 
    打开vim并输入`:BundleInstall`，来完成YouCompleteMe的下载
 
-4. 编译安装YouCompleteMe 
+4. 编译安装YouCompleteMe
 
    ```shell
    cd ~/.vim/bundle/YouCompleteMe
@@ -38,7 +39,7 @@ youcompleteMe官方文档：<https://github.com/Valloric/YouCompleteMe/blob/mast
    # ./install.sh --clang-completer 需要写c代码时再加
    ```
 
-   
+
 
 ##### YouCompleteMe快捷键：
 

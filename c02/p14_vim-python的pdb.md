@@ -1,4 +1,6 @@
-##### 1. python-mode添加断点：
+# vim-python的pdb
+
+### 1. python-mode添加断点：
 
 运行python code: `<leader>r`
 
