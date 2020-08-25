@@ -4,7 +4,7 @@
 
 目前喜欢的主题： `Dracula`
 
-##### iTerm常用快捷键：
+### iTerm常用快捷键：
 
 ```shell
 文档来源：https://www.jianshu.com/p/da7728a8a4d7
@@ -33,7 +33,7 @@
 使用Command + Shift + h 可以呼出粘贴历史，支持模糊检索。还可以设置将粘贴历史保存在磁盘上（Preferences -> General）
 ```
 
-##### item2添加代理，如使用http代理：
+### item2添加代理，如使用http代理：
 
 ```shell
 # 文档链接：https://colobu.com/2018/09/05/set-proxy-for-iterm/

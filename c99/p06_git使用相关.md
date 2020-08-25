@@ -2,7 +2,7 @@
 
 ##### git status 中文乱码解决
 运行如下shell命令设置：
-```
+```shell
 git config --global core.quotepath false
 ```
 解释：

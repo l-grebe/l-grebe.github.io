@@ -1,6 +1,6 @@
 # mac下常用快捷键
 
-```
+```shell
 #### 查看进程：
 ps aux |grep ss-local
 
