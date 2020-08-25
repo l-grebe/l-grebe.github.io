@@ -32,7 +32,7 @@
   * [4.1 requests实现多文件传输](c04/p01_requests实现多文件传输.md)
 * [未归类文档](c99/)
   * [99.1 mac下常用快捷键：](c99/p01_mac下常用快捷键.md)
-  * [99.2 mac chrome快捷键：](c99/p02_mac chrome快捷键.md)
+  * [99.2 mac_chrome快捷键](c99/p02_mac_chrome快捷键.md)
   * [99.3 poker改键记录](c99/p03_poker改键记录.md)
   * [99.4 iTerm设置](c99/p04_iTerm设置.md)
   * [99.5 Fiddler抓http包工具使用](c99/p05_Fiddler抓http包工具使用.md)
