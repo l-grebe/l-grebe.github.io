@@ -40,7 +40,7 @@ def list_files(path, level):
         d_path = os.path.join(path, d)
         d_path_readme = os.path.join(d_path, 'README.md')
         show_name = get_file_title(d_path_readme)
-        show_path = d_path.split('/', 1)[-1] + '/'
+        show_path = os.path.basename(d_path) + '/'
         yield gen_row(show_name, show_path, level)
         for row in list_files(os.path.join(path, d), level + 1):
             yield row
