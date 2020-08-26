@@ -24,7 +24,8 @@ def get_file_title(file_path):
         file_name = os.path.basename(file_path)
         if file_name.startswith('p') and str.isdigit(file_name[1]):
             chapter_num = int(''.join(filter(str.isdigit, dir_name)))
-            file_idx = int(''.join(filter(str.isdigit, file_name.split('_', 1)[0])))
+            file_idx = int(
+                ''.join(filter(str.isdigit, file_name.split('_', 1)[0])))
             show_name = '{}.{} '.format(chapter_num, file_idx) + show_name
         return show_name
 
