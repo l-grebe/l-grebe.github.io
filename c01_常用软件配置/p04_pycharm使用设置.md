@@ -15,4 +15,8 @@
 vim支持：`IdeaVim`
 文件显示美化：`Atom Meterial Icons`
 bash语言支持：`BashSupport`
-其它：`GitToolBox`, `Translation`, `Mongo Plugin`, `Requirements`
+其它：`GitToolBox`
+翻译：`Translation`
+mongo插件：`Mongo Plugin`
+requirements: `Requirements`
+`Rainbow Brackets`
