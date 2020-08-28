@@ -2,7 +2,7 @@
 import os
 
 """
-自动在生成根目录下._sidebar.md文件脚本
+自动在生成项目根目录下._sidebar.md文件脚本
 """
 
 
