@@ -2,14 +2,15 @@
 
 - 操作系统：macOS Catalina
 - 常用atom插件：
-  - ``vim-mode-plus``
-  - ``ex-mode``
-  - ``platformio-ide-terminal``
-  - ``file-icons``
-  - ``pigments``
+  - `vim-mode-plus`
+  - `ex-mode`
+  - `platformio-ide-terminal`
+  - `file-icons`
+  - `pigments`
+  - `minimap`
 
 ### atom设置socks5代理：
-```shell
+```bash
 ~ apm -v
 apm 1.19.0
 npm 3.10.10
@@ -29,7 +30,7 @@ zsh部分主题需要Powerline Fonts，但在atom的terminal下目前没有找�
 发现 platformio Ide Terminal 下有Shell Environment Variables配置项,于是在该栏添加
 了 `FROM_APP=atom` ,然后在 `.zshrc` 中写个if else,换另一个theme就好了，代码如下：
 
-```shell
+```bash
 if [ "$FROM_APP" = "atom" ]; then
   ZSH_THEME="michelebologna"
   echo "docsify serve ."

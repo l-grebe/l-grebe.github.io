@@ -2,7 +2,7 @@
 
 安装vncserver：
 
-```shell
+```bash
 sudo apt install -y vnc4server
 
 # 设置vnc密码命令：
@@ -11,7 +11,7 @@ vnc4passwd
 
 ~/.vnc/xstartup配置文件示例：
 
-```shell
+```bash
 #!/bin/sh
 unset SESSION_MANAGER
 unset DBUS_SESSION_BUS_ADDRESS
@@ -28,7 +28,7 @@ startxfce4 &
 
 systemd配置文件/lib/systemd/system/vncserver.service：
 
-```shell
+```bash
 [Unit]
 Description=vncserver
 After=network.target
@@ -48,7 +48,7 @@ WantedBy=multi-user.target
 
 启动及检查服务：
 
-```shell
+```bash
 sudo systemctl daemon-reload
 sudo systemctl start vncserver
 sudo systemctl status vncserver
@@ -59,6 +59,6 @@ sudo systemctl enable vncserver
 
 查看用户登录记录：
 
-```shell
+```bash
 tail -f ~/.vnc/home-2\:1.log
 ```
