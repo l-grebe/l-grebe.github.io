@@ -1,6 +1,6 @@
 # git使用相关
 
-##### git快捷操作脚本
+##### git快捷merge操作脚本gmerge:
 ```shell
 #!/bin/bash
 
