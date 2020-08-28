@@ -11,13 +11,13 @@
 配置路径：`Preferences | Editor | Color Scheme | Console Font`
 
 ##### 3. pycharm常用插件：
-主题：`Gradianto`
-vim支持：`IdeaVim`
-文件显示美化：`Atom Meterial Icons`
-bash语言支持：`BashSupport`
-其它：`GitToolBox`
-翻译：`Translation`
-mongo插件：`Mongo Plugin`
-requirements: `Requirements`
-minimap: `Code Glance`
-`Rainbow Brackets`
+- 主题：`Gradianto`
+- vim支持：`IdeaVim`
+- 文件显示美化：`Atom Meterial Icons`
+- bash语言支持：`BashSupport`
+- 其它：`GitToolBox`
+- 翻译：`Translation`
+- mongo插件：`Mongo Plugin`
+- requirements: `Requirements`
+- minimap: `Code Glance`
+- `Rainbow Brackets`
