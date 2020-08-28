@@ -6,7 +6,7 @@
 
 ### iTerm常用快捷键：
 
-```shell
+```bash
 文档来源：https://www.jianshu.com/p/da7728a8a4d7
 
 #### iterm下窗口操作
@@ -33,12 +33,27 @@
 使用Command + Shift + h 可以呼出粘贴历史，支持模糊检索。还可以设置将粘贴历史保存在磁盘上（Preferences -> General）
 ```
 
-### item2添加代理，如使用http代理：
+### item2添加http代理
 
-```shell
+```bash
 # 文档链接：https://colobu.com/2018/09/05/set-proxy-for-iterm/
 
 # 终端下运行如下命令即可(这里使用的是树莓派上的privoxy代理)：
-export http_proxy=http://raspi.com:1081
-export https_proxy=$http_proxy
+
+### ~/.zshrc 配置内容如下：
+################### privoxy 配置 ###################
+alias proxy_start='sudo /usr/local/sbin/privoxy /usr/local/etc/privoxy/config'
+# 打开代理
+function proxy_on() {
+    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+    export http_proxy="http://raspi.com:1081"
+    export https_proxy=$http_proxy
+    echo -e "已开启代理"
+}
+# 关闭代理
+function proxy_off(){
+    unset http_proxy
+    unset https_proxy
+    echo -e "已关闭代理"
+}
 ```
