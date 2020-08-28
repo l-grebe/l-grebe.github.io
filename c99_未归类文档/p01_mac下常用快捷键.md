@@ -1,7 +1,7 @@
 # mac下快捷键记录
 
 ### 常用命令与快捷键
-```shell
+```bash
 #### 查看进程：
 ps aux |grep ss-local
 
@@ -30,7 +30,7 @@ ctrl + 上方向键：查看所有软件缩略图
 
 ### mac安装python3
 设置软链接：
-```shell
+```bash
 ln -s /usr/local/opt/python@3.7/bin/python3 /usr/local/bin/python3
 ln -s /usr/local/opt/python@3.7/bin/pip3 /usr/local/bin/pip3
 

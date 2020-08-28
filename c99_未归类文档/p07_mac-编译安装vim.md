@@ -1,6 +1,6 @@
 # mac-编译安装vim
 
-```shell
+```bash
 git clone https://github.com/vim/vim.git
 
 cd vim/src

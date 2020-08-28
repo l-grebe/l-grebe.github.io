@@ -10,7 +10,7 @@ logrotate是个十分有用的工具，它可以自动对日志进行截断（�
 
 ##### 安装命令：
 
-```shell
+```bash
 # 在Debian或Ubuntu上：
 apt-get install logrotate cron
 

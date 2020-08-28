@@ -1,7 +1,7 @@
 # git使用相关
 
 ##### git快捷merge操作脚本gmerge:
-```shell
+```bash
 #!/bin/bash
 
 # 在分支A时，需要将分支B合并到分支C，再切回分支A，这里是shell脚本实现。
@@ -46,7 +46,7 @@ echo_green "cur_branch: `git symbolic-ref --short -q HEAD`"
 
 ##### git status 中文乱码解决
 运行如下shell命令设置：
-```shell
+```bash
 git config --global core.quotepath false
 ```
 解释：
