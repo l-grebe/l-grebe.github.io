@@ -27,3 +27,13 @@ ctrl + 上方向键：查看所有软件缩略图
 | command + n（n代值数字键） | 跳转到第n个标签页      |
 | command + shift + j        | 打开下载页             |
 | ctrl + command + f         | 最大化或缩小最大化窗口 |
+
+### mac安装python3
+设置软链接：
+```shell
+ln -s /usr/local/opt/python@3.7/bin/python3 /usr/local/bin/python3
+ln -s /usr/local/opt/python@3.7/bin/pip3 /usr/local/bin/pip3
+
+ln -s /usr/local/opt/python@3.7/bin/python3 /usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/Python
+
+```
