@@ -19,4 +19,5 @@ bash语言支持：`BashSupport`
 翻译：`Translation`
 mongo插件：`Mongo Plugin`
 requirements: `Requirements`
+minimap: `Code Glance`
 `Rainbow Brackets`
