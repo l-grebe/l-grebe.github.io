@@ -4,7 +4,7 @@
 
 目前喜欢的主题： `Dracula`
 
-item常用字体：`Meslo LG L DZ for Powerline`, ``
+item常用字体：`Meslo LG L DZ for Powerline`
 
 
 ### iTerm常用快捷键：
@@ -21,7 +21,7 @@ item常用字体：`Meslo LG L DZ for Powerline`, ``
 新建标签页: Command + T
 关闭标签页: Command + W
 前一个标签页: Command + 左方向键，Shift + Command + [
-后一个标签页: Command + 右方向键，Shitf + Command + ]
+后一个标签页: Command + 右方向键，Shift + Command + ]
 进入标签页1，2，3…: Command + 标签页编号
 *Expose 标签页: Option + Command + E（将标签页打撒到全屏，并可以全局搜索所有的标签页）
 

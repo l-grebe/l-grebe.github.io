@@ -8,6 +8,7 @@
   - `file-icons`
   - `pigments`
   - `minimap`
+- 常用atom字体：`JetBrainsMono-Regular`
 
 ### atom设置socks5代理：
 ```bash
