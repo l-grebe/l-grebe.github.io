@@ -8,9 +8,9 @@
 - javascript代码格式配置路径：`Preferences | Editor | Code Style | JavaScript -> Wrapping and Braces -> Variable declarations -> Align`，选择`When grouped`即可。
 
 ##### 2. pycharm 字体设置：
-常用字体配置：`JetBrains Mono`, `courier New`, 15, 1.1
+常用字体类型：`JetBrains Mono`, `courier New`, 15, 1.1
 IDE字体配置：`Preferences | Appearance & Behavior | Appearance | Use custom font:`
-代码字体配置路径：`Preferences | Editor | Font`
+CODE字体配置路径：`Preferences | Editor | Font`
 terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 
 ##### 3. pycharm常用插件：
