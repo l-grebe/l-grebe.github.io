@@ -9,8 +9,11 @@
 
 ##### 2. pycharm 字体设置：
 常用字体类型：`JetBrains Mono`, `courier New`, 15, 1.1
+
 IDE字体配置：`Preferences | Appearance & Behavior | Appearance | Use custom font:`
+
 CODE字体配置路径：`Preferences | Editor | Font`
+
 terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 
 ##### 3. pycharm常用插件：
@@ -27,4 +30,5 @@ terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 
 ##### 4. python代理设置：
 设置路径：`Preferences | Appearance & Behavior | System Settings | HTTP Proxy`
+
 历史配置：`HTTP raspi.com:1081`
