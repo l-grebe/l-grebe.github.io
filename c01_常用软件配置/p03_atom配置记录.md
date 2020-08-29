@@ -27,15 +27,17 @@ strict-ssl=false
 ```
 
 ### 安装platformio-ide-terminal插件后PS1乱码解决：
-zsh部分主题需要Powerline Fonts，但在atom的terminal下目前没有找到如何指定terminal字体，
-发现 platformio Ide Terminal 下有Shell Environment Variables配置项,于是在该栏添加
-了 `FROM_APP=atom` ,然后在 `.zshrc` 中写个if else,换另一个theme就好了，代码如下：
+platformio-ide-terminal插件使用`JetBrainsMono-Medium`字体即可，该字体科直接去<https://www.jetbrains.com/zh-cn/lp/mono/>下载。
 
-```bash
-if [ "$FROM_APP" = "atom" ]; then
+已弃用解决方法：
+> zsh部分主题需要Powerline Fonts，但在atom的terminal下目前没有找到如何指定terminal字体，
+  发现 platformio Ide Terminal 下有Shell Environment Variables配置项,于是在该栏添加
+  了 `FROM_APP=atom` ,然后在 `.zshrc` 中写个if else,换另一个theme就好了，代码如下：
+  ```bash
+  if [ "$FROM_APP" = "atom" ]; then
   ZSH_THEME="michelebologna"
   echo "docsify serve ."
-else
+  else
   ZSH_THEME="agnoster"
-fi
-```
+  fi
+  ```
