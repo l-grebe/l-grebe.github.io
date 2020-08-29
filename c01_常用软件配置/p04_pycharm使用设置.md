@@ -27,6 +27,7 @@ terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 - requirements: `Requirements`
 - minimap: `Code Glance`
 - `Rainbow Brackets`
+- `.ignore`
 
 ##### 4. python代理设置：
 设置路径：`Preferences | Appearance & Behavior | System Settings | HTTP Proxy`
