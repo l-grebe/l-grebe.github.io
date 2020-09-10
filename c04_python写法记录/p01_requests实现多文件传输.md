@@ -21,12 +21,12 @@ def main():
         params=params,
         files=[
             ('images', ('123_picture001.png', open('~/Pictures/picture001.png', 'rb'), 'image/png', )),
-            ('images', ('338_清平乐·村居.jpeg', open('~/Pictures/清平乐·村居.jpeg', 'rb'), 'image/jpeg', )),
-            ('audios', ('234_清平乐·村居.mp3', open('~/Pictures/清平乐·村居.mp3', 'rb'), 'audio/mp3', )),
-            ('audios', ('234_清平乐·村居.mp3', open('~/Pictures/清平乐·村居.mp3', 'rb'), 'audio/mp3', )),
-            ('audios', ('234_清平乐·村居.mp3', open('~/Pictures/清平乐·村居.mp3', 'rb'), 'audio/mp3', )),
-            ('videos', ('554_清平乐·村居.mp4', open('~/Pictures/清平乐·村居.mp4', 'rb'), 'video/x-mpg', )),
-            ('videos', ('554_清平乐·村居.mp4', open('~/Pictures/清平乐·村居.mp4', 'rb'), 'video/x-mpg', )),
+            ('images', ('338_123.jpeg', open('~/Pictures/123.jpeg', 'rb'), 'image/jpeg', )),
+            ('audios', ('234_1234.mp3', open('~/Pictures/1234.mp3', 'rb'), 'audio/mp3', )),
+            ('audios', ('234_1234.mp3', open('~/Pictures/1234.mp3', 'rb'), 'audio/mp3', )),
+            ('audios', ('234_1234.mp3', open('~/Pictures/1234.mp3', 'rb'), 'audio/mp3', )),
+            ('videos', ('554_11111.mp4', open('~/Pictures/11111.mp4', 'rb'), 'video/x-mpg', )),
+            ('videos', ('554_11111.mp4', open('~/Pictures/11111.mp4', 'rb'), 'video/x-mpg', )),
             ('text', ('explain_text', '最喜小儿无赖，溪头卧剥莲蓬。')),
         ]
     )
