@@ -37,6 +37,8 @@ if __name__ == '__main__':
     run(app='tests.test_003_sleep:app', host='127.0.0.1', port=8001, reload=True)
 ```
 
+运行代码：```python -m tests.test003_sleep```
+
 ### 二，使用压测工具siege，得到如下结果：
 ```bash
 hu@iMac  ~  siege -c 100 -r 1 http://127.0.0.1:8001/async_slowest
