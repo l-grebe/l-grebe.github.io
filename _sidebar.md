@@ -32,6 +32,7 @@
   * [3.7 docker运行nextcloud服务](c03_树莓派常用服务/p07_docker运行nextcloud服务.md)
 * [第四章：python写法收录](c04_python写法记录/)
   * [4.1 requests实现多文件传输](c04_python写法记录/p01_requests实现多文件传输.md)
+  * [4.2 fastapi async写法与同步性能比较](c04_python写法记录/p02_fastapi_async测试.md)
 * [未归类文档](c99_未归类文档/)
   * [99.1 mac下快捷键记录](c99_未归类文档/p01_mac下常用快捷键.md)
   * [99.3 poker改键记录](c99_未归类文档/p03_poker改键记录.md)
