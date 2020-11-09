@@ -16,6 +16,8 @@ CODE字体配置路径：`Preferences | Editor | Font`
 
 terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 
+设置一行代码长度： `Preferences | Editor | Code Style | Hard wrap at`
+
 ##### 3. pycharm常用插件：
 - 主题：`Gradianto`
 - vim支持：`IdeaVim`
@@ -28,6 +30,8 @@ terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 - minimap: `Code Glance`
 - `Rainbow Brackets`
 - `.ignore`
+- `Kubernetes`
+- `Grep Console`
 
 ##### 4. python代理设置：
 设置路径：`Preferences | Appearance & Behavior | System Settings | HTTP Proxy`
