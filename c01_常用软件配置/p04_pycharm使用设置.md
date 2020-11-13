@@ -16,8 +16,6 @@ CODE字体配置路径：`Preferences | Editor | Font`
 
 terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 
-设置一行代码长度： `Preferences | Editor | Code Style | Hard wrap at`
-
 ##### 3. pycharm常用插件：
 - 主题：`Gradianto`
 - vim支持：`IdeaVim`
@@ -37,3 +35,10 @@ terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 设置路径：`Preferences | Appearance & Behavior | System Settings | HTTP Proxy`
 
 历史配置：`HTTP raspi.com:1081`
+
+##### 5. 其它相关设置
+设置一行代码长度： `Preferences | Editor | Code Style | Hard wrap at`
+
+设置不提醒`Duplicated code fragment`:
+
+pycharm不自动折叠import代码: `Preferences | Editor | General | Code Folding | Ford by default | Imports`
