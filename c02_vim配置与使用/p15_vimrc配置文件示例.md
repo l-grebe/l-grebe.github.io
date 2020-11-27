@@ -26,6 +26,9 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'wchargin/vim-latexsuite'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'klen/python-mode'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'mzlogin/vim-markdown-toc'
 " Plugin 'Valloric/YouCompleteMe'
 call vundle#end()               " required
 filetype plugin indent on       " required
