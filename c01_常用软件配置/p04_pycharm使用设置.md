@@ -42,3 +42,5 @@ terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 设置不提醒`Duplicated code fragment`:
 
 pycharm不自动折叠import代码: `Preferences | Editor | General | Code Folding | Ford by default | Imports`
+
+pycharm连续缩进改为4空格(解决函数参数前空8个空格的问题)：`Preferences | Editor | Code Style | Python | Tabs and Indents | Continuation indent` 改为4
