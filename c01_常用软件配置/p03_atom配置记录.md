@@ -27,7 +27,7 @@ strict-ssl=false
 ```
 
 ### 安装platformio-ide-terminal插件后PS1乱码解决：
-platformio-ide-terminal插件使用`JetBrainsMono-Medium`字体即可，该字体科直接去<https://www.jetbrains.com/zh-cn/lp/mono/>下载。
+platformio-ide-terminal插件使用`JetBrainsMono-Medium`字体即可，该字体可直接去<https://www.jetbrains.com/zh-cn/lp/mono/>下载。
 
 已弃用解决方法：
 > zsh部分主题需要Powerline Fonts，但在atom的terminal下目前没有找到如何指定terminal字体，
