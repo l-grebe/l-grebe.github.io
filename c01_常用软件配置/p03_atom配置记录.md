@@ -5,6 +5,11 @@
   - `vim-mode-plus`
   - `ex-mode`
   - `platformio-ide-terminal`
+  - `atom-beautify`
+  - `atom-ide-ui`
+  - `ide-json`
+  - `ide-python`
+  - `pretty-json`
   - `file-icons`
   - `pigments`
   - `minimap`
