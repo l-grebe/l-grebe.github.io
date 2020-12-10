@@ -6,6 +6,7 @@
   * [1.5 Docker使用记录](c01_常用软件配置/p05_Docker使用记录.md)
   * [1.6 vncserver安装与配置](c01_常用软件配置/p06_vncserver安装与配置.md)
   * [1.7 Hackintosh黑苹果长期维护机型整理清单：<https://blog.daliansky.net/Hackintosh-long-term-maintenance-model-checklist.html>](c01_常用软件配置/p07_黑苹果安装记录.md)
+  * [1.8 parallels问题记录](c01_常用软件配置/p08_parallels问题记录.md)
 * [第二章：vim配置与使用](c02_vim配置与使用/)
   * [2.1 vim介绍](c02_vim配置与使用/p01_vim介绍.md)
   * [2.2 vim光标移动](c02_vim配置与使用/p02_vim光标移动.md)
@@ -42,3 +43,4 @@
   * [99.7 mac-编译安装vim](c99_未归类文档/p07_mac-编译安装vim.md)
   * [99.8 Linux日志文件总管—logrotate](c99_未归类文档/p08_Linux日志文件总管—logrotate.md)
 * [about me](aboutme.md)
+* [临时记录](tmp.md)
