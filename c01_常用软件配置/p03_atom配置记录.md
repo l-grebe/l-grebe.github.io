@@ -46,3 +46,6 @@ platformio-ide-terminal插件使用`JetBrainsMono-Medium`字体即可，该字�
   ZSH_THEME="agnoster"
   fi
   ```
+
+### atom不显示红色的下划线：
+- 禁用spell-check这一package即可.
