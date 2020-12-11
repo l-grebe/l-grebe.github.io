@@ -12,8 +12,10 @@ mkdir ca_file && cd ca_file
 
 DOMAIN='vmk8s.com'
 
+# 1.Generate a private key.
 openssl genrsa -out ca.key 4096
 
+# 2.Generate a certificate signing request (CSR).
 openssl req -x509 -new -nodes -sha512 -days 3650 \
  -subj "/C=CN/ST=Beijing/L=Beijing/O=example/OU=Personal/CN=${DOMAIN}" \
  -key ca.key \
@@ -26,6 +28,7 @@ openssl req -sha512 -new \
     -key ${DOMAIN}.key \
     -out ${DOMAIN}.csr
 
+# 3.Generate an x509 v3 extension file.
 cat > v3.ext <<-EOF
 authorityKeyIdentifier=keyid,issuer
 basicConstraints=CA:FALSE
@@ -38,4 +41,33 @@ DNS.1=vmk8s.com
 DNS.2=vmk8s
 DNS.3=k8s-master
 EOF
+
+# 4.Use the v3.ext file to generate a certificate for your Harbor host.
+openssl x509 -req -sha512 -days 3650 \
+    -extfile v3.ext \
+    -CA ca.crt -CAkey ca.key -CAcreateserial \
+    -in ${DOMAIN}.csr \
+    -out ${DOMAIN}.crt
+```
+
+### Provide the Certificates to Harbor and Docker
+```bash
+DOMAIN='vmk8s.com'
+
+# 1.Copy the server certificate and key into the certficates folder on your Harbor host.
+mkdir /data/harbor/cert
+cp ${DOMAIN}.crt /data/harbor/cert/
+cp ${DOMAIN}.key /data/harbor/cert/
+
+# 2.Convert yourdomain.com.crt to yourdomain.com.cert, for use by Docker.
+openssl x509 -inform PEM -in ${DOMAIN}.crt -out ${DOMAIN}.cert
+
+# 3.Copy the server certificate, key and CA files into the Docker certificates folder on the Harbor host. You must create the appropriate folders first.
+mkdir -p /etc/docker/certs.d/${DOMAIN}/
+cp ${DOMAIN}.cert /etc/docker/certs.d/${DOMAIN}/
+cp ${DOMAIN}.key /etc/docker/certs.d/${DOMAIN}/
+cp ca.crt /etc/docker/certs.d/${DOMAIN}/
+
+# 4.Restart Docker Engine.
+systemctl restart docker
 ```
