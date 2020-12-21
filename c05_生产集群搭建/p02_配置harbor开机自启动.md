@@ -4,7 +4,7 @@
 
 本想通过添加systemctl配置文件，实现开机自启动harbor，但尝试多次没有成功，最后通过supervisor实现harbor开机自启，内容如下：
 
-文件路径：</etc/supervisor/conf.d/harbor.ini>
+文件路径：`/etc/supervisor/conf.d/harbor.ini`
 
 文件内容：
 ```
