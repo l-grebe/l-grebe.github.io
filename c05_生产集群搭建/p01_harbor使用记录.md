@@ -52,7 +52,7 @@ openssl x509 -req -sha512 -days 3650 \
 
 ### Provide the Certificates to Harbor and Docker
 ```bash
-DOMAIN='vmk8s.com'
+DOMAIN='vmele.com'
 
 # 1.Copy the server certificate and key into the certficates folder on your Harbor host.
 mkdir /data/harbor/cert
