@@ -102,6 +102,23 @@ echo '
   "size": 1
 }' | http 'localhost:9200/accounts/_doc/_search'
 
-# 逻辑运算
+# 逻辑运算 or
+echo '
+{
+  "query" : { "match" : { "desc" : "数据 软件" }}
+}' | http 'localhost:9200/accounts/_doc/_search'
+
+# 逻辑运算 and
+echo '
+{
+  "query" : {
+    "bool": {
+      "must": [
+        {"match" : { "desc" : "数据" } },
+        {"match" : { "desc" : "软件" } }
+      ]
+    }
+  }
+}' | http 'localhost:9200/accounts/_doc/_search'
 ...
 ```
