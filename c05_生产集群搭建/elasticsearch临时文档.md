@@ -55,6 +55,14 @@ echo '
   "title": "工程师",
   "desc": "数据库管理"
 }' | http -f POST 'localhost:9200/accounts/_doc/1' -j
+
+# 再增一条
+echo '
+{
+  "user": "李四",
+  "title": "高级工程师",
+  "desc": "数据库管理, 服务管理"
+}' | http -f POST 'localhost:9200/accounts/_doc/2' -j
 # 查看记录
 http 'localhost:9200/accounts/_doc/1?pretty=true'
 # 查看不存在的记录
@@ -76,6 +84,24 @@ http 'localhost:9200/accounts/_doc/_search'
 # 添加过滤条件的查询
 echo '
 {
-  "query" : { "match" : { "desc" : "软件" }}
+  "query" : { "match" : { "desc" : "数据" }}
 }' | http 'localhost:9200/accounts/_doc/_search'
+
+# 指定返回数据条数，默认是10条
+echo '
+{
+  "query" : { "match" : { "desc" : "数据" }},
+  "size": 1
+}' | http 'localhost:9200/accounts/_doc/_search'
+
+# 通过from字段，指定位移
+echo '
+{
+  "query" : { "match" : { "desc" : "数据" }},
+  "from": 1,
+  "size": 1
+}' | http 'localhost:9200/accounts/_doc/_search'
+
+# 逻辑运算
+...
 ```
