@@ -4,6 +4,12 @@
 
 ### 基本操作
 ```bash
+# 查看集群健康状况
+http 'localhost:9200/_cat/health?v'
+
+# 查看节点状态
+http 'localhost:9200/_cat/nodes?v'
+
 # 查看集群信息
 http localhost:9200
 
