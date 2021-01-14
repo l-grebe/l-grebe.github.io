@@ -10,7 +10,7 @@
 cd /opt/harbor/
 mkdir ca_file && cd ca_file
 
-DOMAIN='vmk8s.com'
+DOMAIN='vmele.com'
 
 # 1.Generate a private key.
 openssl genrsa -out ca.key 4096
@@ -37,9 +37,9 @@ extendedKeyUsage = serverAuth
 subjectAltName = @alt_names
 
 [alt_names]
-DNS.1=vmk8s.com
-DNS.2=vmk8s
-DNS.3=k8s-master
+DNS.1=vmele.com
+DNS.2=vmele
+DNS.3=elementaryos
 EOF
 
 # 4.Use the v3.ext file to generate a certificate for your Harbor host.
@@ -52,7 +52,7 @@ openssl x509 -req -sha512 -days 3650 \
 
 ### Provide the Certificates to Harbor and Docker
 ```bash
-DOMAIN='vmk8s.com'
+DOMAIN='vmele.com'
 
 # 1.Copy the server certificate and key into the certficates folder on your Harbor host.
 mkdir /data/harbor/cert
