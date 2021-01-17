@@ -2,7 +2,7 @@
 
 - 操作系统：macOS Catalina
 - 常用atom插件：
-  - `markdown-preview-plus`
+  - `markdown-preview-plus`: (记得将markdown-preview设为禁用)
   - `vim-mode-plus`
   - `ex-mode`
   - `platformio-ide-terminal`
