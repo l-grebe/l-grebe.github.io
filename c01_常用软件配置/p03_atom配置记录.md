@@ -48,7 +48,7 @@ platformio-ide-terminal插件使用`JetBrainsMono-Medium`字体即可，该字�
   fi
   ```
 
-### atom不显示红色的下划线：
-- 禁用spell-check这一package即可.
+atom不显示红色的下划线：
+> 禁用spell-check这一package即可.
 
 atom markdown-preview-plus 快速显示markdown预览快捷键：`ctrl+shift+m`
