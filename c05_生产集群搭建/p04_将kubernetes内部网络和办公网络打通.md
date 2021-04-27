@@ -31,3 +31,5 @@ sudo route -n add -net 10.107.14.0 -netmask 255.255.0.0 10.123.2.4
 
 
 ```
+
+目前已在mac中添加了kubernetes的dns服务器，但未打通办公网络到service的网络访问。
