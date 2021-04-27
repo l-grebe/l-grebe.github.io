@@ -25,9 +25,22 @@ sudo route -n delete -net 10.96.0.0 -netmask 255.240.0.0 10.123.2.3
 # 解法2：
 #  将路由规则具体到节点的calico ip规则下：
 # master节点
-sudo route -n add -net 10.108.82.0 -netmask 255.255.0.0 10.123.2.3
+sudo route -n add -net 10.108.0.0 -netmask 255.255.0.0 10.123.2.3
 # node02节点
-sudo route -n add -net 10.107.14.0 -netmask 255.255.0.0 10.123.2.4
+sudo route -n add -net 10.107.0.0 -netmask 255.255.0.0 10.123.2.4
 
+sudo route -n delete -net 10.108.0.0 -netmask 255.255.0.0 10.123.2.3
+sudo route -n delete -net 10.107.0.0 -netmask 255.255.0.0 10.123.2.4
 
+```
+```bash
+nslookup atlantis.master.svc.cluster.local
+# 在master节点上是可以通过内部请求svc服务的：
+http http://atlantis.master.svc.cluster.local:8000/ping/health
+
+# 参考文章: <https://blog.csdn.net/snowrain1108/article/details/51734553>
+# 查看mac Wi-Fi网卡的dns设置
+networksetup -getdnsservers Wi-Fi
+# 清除Wi-Fi网卡的dns设置
+networksetup -setdnsservers Wi-Fi empty
 ```
