@@ -24,7 +24,9 @@ sudo route -n delete -net 10.96.0.0 -netmask 255.240.0.0 10.123.2.3
 #   暂时想到的是master节点需要开启路由转发功能，配置如下：
 # 解法2：
 #  将路由规则具体到节点的calico ip规则下：
+# master节点
 sudo route -n add -net 10.108.82.0 -netmask 255.255.0.0 10.123.2.3
+# node02节点
 sudo route -n add -net 10.107.14.0 -netmask 255.255.0.0 10.123.2.4
 
 
