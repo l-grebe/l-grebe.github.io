@@ -23,8 +23,11 @@ networksetup -setdnsservers Wi-Fi empty
 #   kubernetes node02节点IP：10.123.2.4/24
 #   kubernetes集群--service-cluster-ip-range=10.96.0.0/12
 
-# MacOS上添加的静态路由规则如下：
-sudo route -n add -net 10.96.0.0 -netmask 255.240.0.0 10.123.2.3
+### MacOS上添加的静态路由规则如下：
+# 对master pod地址段的访问，直接转到master节点
+sudo route -n add -net 10.108.82.0 -netmask 255.255.255.0 10.123.2.3
+# 对service 和 node pod的访问，直接转发到node节点
+sudo route -n add -net 10.96.0.0 -netmask 255.240.0.0 10.123.2.4
 # MacOS上删除静态路由规则命令：
 # sudo route -n delete -net 10.96.0.0 -netmask 255.240.0.0 10.123.2.3
 ```
