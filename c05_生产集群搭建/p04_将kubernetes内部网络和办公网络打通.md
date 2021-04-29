@@ -56,6 +56,16 @@ http http://atlantis.master.svc.cluster.local:8000/ping/health
 
 #### 打通到kubernetes的dns访问：
 通过在node02节点部署dnsmasq服务实现。
-```
+```bash
+cat > /etc/dnsmasq.d/default.conf <<-EOF
+server=/cluster.local/10.96.0.10
+EOF
 
+systemctl start dnsmasp
+systemctl status dnsmasp
+systemctl stop dnsmasp
+
+# 查看53端口已经开启
+netstat -lnpt |grep 53
 ```
+将该node节点`/etc/resove.conf`的nameserver改为宿主机所在网段的nameserver，并将宿主机的dns指向该node节点即可。
