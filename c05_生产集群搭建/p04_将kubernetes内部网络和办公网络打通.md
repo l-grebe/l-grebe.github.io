@@ -67,12 +67,9 @@ EOF
 
 # master节点添加如下iptables配置:
 # 来自办公网络访问pod、service snat
-iptables -t nat -A POSTROUTING -s 10.123.2.0/24 -d 10.96.0.0/12 -j MASQUERADE
+# iptables -t nat -A POSTROUTING -s 10.123.2.0/24 -d 10.96.0.0/12 -j MASQUERADE
 # 删除
-iptables -t nat -D POSTROUTING -s 10.123.2.0/24 -d 10.96.0.0/12 -j MASQUERADE
-# MacOS上添加路由规则：
-sudo route -n add -net 10.107.0.0 -netmask 255.255.0.0 10.123.2.4
-sudo route -n add -net 10.96.0.0 -netmask 255.240.0.0 10.123.2.3
+# iptables -t nat -D POSTROUTING -s 10.123.2.0/24 -d 10.96.0.0/12 -j MASQUERADE
 
 systemctl start dnsmasp
 systemctl status dnsmasp
