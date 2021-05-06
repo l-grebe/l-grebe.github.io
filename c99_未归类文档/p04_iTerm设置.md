@@ -6,7 +6,6 @@
 
 item常用字体：`Meslo LG L DZ for Powerline`
 
-
 ### iTerm常用快捷键：
 
 ```bash
