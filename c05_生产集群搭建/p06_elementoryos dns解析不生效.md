@@ -45,7 +45,9 @@ Server: gunicorn/19.9.0
 
 但linuxmint也存在该服务，是正常的。
 
-寻找发现是avahi-daemon和`.local`域问题，文档链接：`https://qastack.cn/unix/352237/avahi-daemon-and-local-domain-issues`
+寻找发现是`avahi-daemon`和`.local`域问题
+
+文档链接：`https://qastack.cn/unix/352237/avahi-daemon-and-local-domain-issues`
 
 文档链接：`https://web.archive.org/web/20160608083415/http://avahi.org/wiki/AvahiAndUnicastDotLocal`
 
