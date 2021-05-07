@@ -7,11 +7,11 @@
 文件路径：`/etc/supervisor/conf.d/harbor.ini`
 
 文件内容：
-```
+```ini
 [program:harbor]
 directory=/opt/harbor
 command=/usr/local/bin/docker-compose -f /opt/harbor/docker-compose.yml up
-stop-command=/usr/local/bin/docker-compose -f /opt/harbor/docker-compose.yml down
+# stop-command=/usr/local/bin/docker-compose -f /opt/harbor/docker-compose.yml down
 user=root
 numprocs=1
 process_name=task%(process_num)d
