@@ -41,9 +41,9 @@ sudo route -n add -net 10.96.0.0 -netmask 255.240.0.0 10.123.2.4
 # sudo route -n delete -net 10.108.82.192 -netmask 255.255.255.192 10.123.2.3
 # sudo route -n delete -net 10.96.0.0 -netmask 255.240.0.0 10.123.2.4
 
-# Linux
-sudo route add -net 10.108.82.0 netmask 255.255.255.0 gw 10.123.2.3
-sudo route add -net 10.96.0.0 netmask 255.240.0.0 gw 10.123.2.4
+# Linux下添加路由的命令:
+# sudo route add -net 10.108.82.0 netmask 255.255.255.0 gw 10.123.2.3
+# sudo route add -net 10.96.0.0 netmask 255.240.0.0 gw 10.123.2.4
 ```
 
 >  问题记录1：如果将数据包都转发到master节点，发现访问service的ip，是不行的，但将数据包转发到node节点可以实现。
