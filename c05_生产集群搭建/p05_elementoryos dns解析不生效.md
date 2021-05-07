@@ -1,3 +1,5 @@
+# elementory os gethostbyname解析不了kuberntes域名问题处理
+
 #### 基础信息:
 - 问题记录：宿主机已配置dns，网络中其它虚拟主机（windows，linuxmint）都能正常通过域名访问kubernetes集群服务，但elementory os不可以，通过`sudo tcpdump udp`命令，发现dns的包都转到`224.0.0.251.mdns`的地方了，最终发现问题出在`avahi-daemon.service`服务里。
 
