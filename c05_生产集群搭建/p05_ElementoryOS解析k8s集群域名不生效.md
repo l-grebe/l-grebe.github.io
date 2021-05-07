@@ -54,7 +54,7 @@ Server: gunicorn/19.9.0
 最终修改`/etc/nsswitch.conf`，并重启虚拟主机得已解决：
 ```shell
 # 将如下行：
-#domain-name=local
+hosts:          files mdns4_minimal [NOTFOUND=return] dns
 # 改为：
-domain-name=.alocal
+hosts:          files dns mdns4
 ```
