@@ -51,7 +51,7 @@ Server: gunicorn/19.9.0
 
 找到文档链接2：`https://web.archive.org/web/20160608083415/http://avahi.org/wiki/AvahiAndUnicastDotLocal`
 
-最终修改`/etc/avahi/avahi-daemon.conf`，并重启虚拟主机得已解决：
+最终修改`/etc/nsswitch.conf`，并重启虚拟主机得已解决：
 ```shell
 # 将如下行：
 #domain-name=local
