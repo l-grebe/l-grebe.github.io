@@ -43,7 +43,7 @@ Server: gunicorn/19.9.0
 ```
 解析成功!目前说明问题出在了avahi-daemon服务里，但linuxmint也存在该服务，是正常的。
 
-寻找发现是`avahi-daemon`和`.local`域问题
+寻找发现是`avahi-daemon`和`.local`域之间的问题。
 
 通过文档链接1：`https://qastack.cn/unix/352237/avahi-daemon-and-local-domain-issues`
 
