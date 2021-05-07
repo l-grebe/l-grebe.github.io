@@ -133,8 +133,8 @@ docker run -p 9000:9000 --name minio \
 
 # 或者执行如下命令，自定义ACCESS_KEY和SECRET_KEY
 docker run -p 9000:9000 --name minio \
-  -e "MINIO_ACCESS_KEY=SDFIOHGSDKLFJOWNLVKEPUIOFWJS" \
-  -e "MINIO_SECRET_KEY=ODSJFLGEWOSKLDFJ&(@#DDUSKLFJ" \
+  -e "MINIO_ACCESS_KEY=123456" \
+  -e "MINIO_SECRET_KEY=111111" \
   -v /data/minio:/data \
   -v /home/hu/.minio:/root/.minio \
   minio/minio server /data
@@ -148,8 +148,8 @@ docker pull minio/minio:edge
 
 # 或者执行如下命令，自定义ACCESS_KEY和SECRET_KEY
 docker run -p 9000:9000 --name minio \
-  -e "MINIO_ACCESS_KEY=SDFIOHGSDKLFJOWNLVKEPUIOFWJS" \
-  -e "MINIO_SECRET_KEY=ODSJFLGEWOSKLDFJ&(@#DDUSKLFJ" \
+  -e "MINIO_ACCESS_KEY=123456" \
+  -e "MINIO_SECRET_KEY=111111" \
   -v /data/minio:/data \
   -v /home/hu/.minio:/root/.minio \
   minio/minio:edge server /data
