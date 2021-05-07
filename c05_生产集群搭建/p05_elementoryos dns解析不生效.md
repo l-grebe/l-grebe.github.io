@@ -1,5 +1,5 @@
 #### 基础信息:
-- 问题记录：宿主机已配置dns，网络中其它虚拟主机（windows，linuxmint）都能正常通过域名访问kubernetes集群服务，但elementoryos不可以，通过`sudo tcpdump udp`命令，发现dns的包都转到`224.0.0.251.mdns`的地方了，最终发现问题出在`avahi-daemon.service`服务里。
+- 问题记录：宿主机已配置dns，网络中其它虚拟主机（windows，linuxmint）都能正常通过域名访问kubernetes集群服务，但elementory os不可以，通过`sudo tcpdump udp`命令，发现dns的包都转到`224.0.0.251.mdns`的地方了，最终发现问题出在`avahi-daemon.service`服务里。
 
 #### 问题追查记录:
 
@@ -45,14 +45,14 @@ Server: gunicorn/19.9.0
 
 寻找发现是`avahi-daemon`和`.local`域问题
 
-文档链接：`https://qastack.cn/unix/352237/avahi-daemon-and-local-domain-issues`
+通过文档链接1：`https://qastack.cn/unix/352237/avahi-daemon-and-local-domain-issues`
 
-文档链接：`https://web.archive.org/web/20160608083415/http://avahi.org/wiki/AvahiAndUnicastDotLocal`
+找到文档链接2：`https://web.archive.org/web/20160608083415/http://avahi.org/wiki/AvahiAndUnicastDotLocal`
 
-最终修改`/etc/nsswitch.conf`得已解决：
+最终修改`/etc/avahi/avahi-daemon.conf`，并重启虚拟主机得已解决：
 ```shell
 # 将如下行：
-hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4
+#domain-name=local
 # 改为：
-hosts: files dns mdns4
+domain-name=.alocal
 ```
