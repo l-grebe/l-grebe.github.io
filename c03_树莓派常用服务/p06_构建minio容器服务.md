@@ -72,8 +72,8 @@ docker build -t husy/minio -f Dockerfile.arm.release .
 
 ```shell
 docker run -d -p 9000:9000 --name minio \
-  -e "MINIO_ACCESS_KEY=SDFIDUOHGSDKSDLFJOWNTULTUVKEIOFWJS" \
-  -e "MINIO_SECRET_KEY=ODSJCSFLGASESKWOSKLTDUDFJ&(@#DSKLFJ" \
+  -e "MINIO_ACCESS_KEY=123456" \
+  -e "MINIO_SECRET_KEY=111111" \
   --restart always \
   -v /data/minio:/data \
   -v /home/hu/.minio:/root/.minio \
