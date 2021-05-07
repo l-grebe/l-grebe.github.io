@@ -5,7 +5,7 @@
   * [1.4 pycharm使用设置](c01_常用软件配置/p04_pycharm使用设置.md)
   * [1.5 Docker使用记录](c01_常用软件配置/p05_Docker使用记录.md)
   * [1.6 vncserver安装与配置](c01_常用软件配置/p06_vncserver安装与配置.md)
-  * [1.7 Hackintosh黑苹果长期维护机型整理清单：<https://blog.daliansky.net/Hackintosh-long-term-maintenance-model-checklist.html>](c01_常用软件配置/p07_黑苹果安装记录.md)
+  * [1.7 黑苹果安装记录](c01_常用软件配置/p07_黑苹果安装记录.md)
   * [1.8 parallels问题记录](c01_常用软件配置/p08_parallels问题记录.md)
 * [第二章：vim配置与使用](c02_vim配置与使用/)
   * [2.1 vim介绍](c02_vim配置与使用/p01_vim介绍.md)
