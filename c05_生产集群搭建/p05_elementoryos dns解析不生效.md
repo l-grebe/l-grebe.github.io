@@ -1,10 +1,10 @@
 #### 基础信息:
-- 问题记录：宿主机已配置dns，网络中其它主机（windows，linuxmint）都能正常通过域名访问kubernetes集群服务，但elementoryos不可以，通过`sudo tcpdump udp`命令，发现dns的包都转到`224.0.0.251.mdns`的地方了，最终发现是`avahi-daemon.service`服务的锅。
+- 问题记录：宿主机已配置dns，网络中其它虚拟主机（windows，linuxmint）都能正常通过域名访问kubernetes集群服务，但elementoryos不可以，通过`sudo tcpdump udp`命令，发现dns的包都转到`224.0.0.251.mdns`的地方了，最终发现问题出在`avahi-daemon.service`服务里。
 
-#### 问题记录:
+#### 问题追查记录:
 
 nslookup是通的：
-```
+```shell
 husy@elementaryos:~$ nslookup httpbin.default.svc.cluster.local
 Server:		127.0.0.53
 Address:	127.0.0.53#53
@@ -14,21 +14,21 @@ Name:	httpbin.default.svc.cluster.local
 Address: 10.107.81.94
 ```
 
-访问服务，不通：
-```
+访问服务，却不通：
+```shell
 husy@elementaryos:~$ http httpbin.default.svc.cluster.local
 
 http: error: ConnectionError: HTTPConnectionPool(host='httpbin.default.svc.cluster.local', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2918a51c18>: Failed to establish a new connection: [Errno -2] Name or service not known',)) while doing GET request to URL: http://httpbin.default.svc.cluster.local/
 ```
 
 停掉该服务后可以访问：
-```
+```shell
 sudo systemctl stop avahi-daemon.socket
 sudo systemctl stop avahi-daemon.service
 ```
 
-再次测试：
-```
+再次测试，可以访问了：
+```shell
 husy@elementaryos:~$ http httpbin.default.svc.cluster.local
 HTTP/1.1 200 OK
 Access-Control-Allow-Credentials: true
@@ -41,9 +41,7 @@ Server: gunicorn/19.9.0
 
 ...
 ```
-解析成功!
-
-但linuxmint也存在该服务，是正常的。
+解析成功!目前说明问题出在了avahi-daemon服务里，但linuxmint也存在该服务，是正常的。
 
 寻找发现是`avahi-daemon`和`.local`域问题
 
