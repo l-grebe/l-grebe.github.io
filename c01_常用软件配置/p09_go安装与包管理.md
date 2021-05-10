@@ -4,6 +4,8 @@
 - go version: 1.16.4
 - 安装包下载网址：<https://golang.org/doc/install?download=go1.16.4.darwin-amd64.pkg>
 
+## 安装go并做相关配置
+
 直接下载pkg文件，点击安装即可。
 
 查看go可执行文件安装位置：
@@ -61,7 +63,7 @@ go mod vendor # 生成vendor文件夹，制作依赖关系的供应副本
 ```
 
 运行完成后，当前目录展示如下：
-```
+```shell
 .
 ├── go.mod
 ├── go.sum
