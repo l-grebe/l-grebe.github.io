@@ -6,6 +6,13 @@
 
 直接下载pkg文件，点击安装即可。
 
+查看go可执行文件安装位置：
+```shell
+~ which go
+/usr/local/go/bin/go
+```
+
+
 `.zshrc`文件中配置GOPATH：
 ```shell
 # GOPATH
@@ -20,6 +27,8 @@ go env -w GOPROXY=https://goproxy.io,direct
 开启新terminal后，运行`go env`查看设置情况：
 
 ## 安装第3方包
+
+创建工程目录：
 ```
 mkdir awesomeProject
 cd awesomeProject
@@ -44,14 +53,14 @@ func main() {
 }
 ```
 
-运行如下命令安装包：
+运行如下命令安装包，更多说明可通过`go mod help`命令查看：
 ```shell
 go mod init awesomeProject # 在当前目录中初始化新模块
 go mod tidy # 添加缺少的内容并删除未使用的模块
 go mod vendor # 生成vendor文件夹，制作依赖关系的供应副本
 ```
 
-当前目录：
+运行完成后，当前目录展示如下：
 ```
 .
 ├── go.mod
