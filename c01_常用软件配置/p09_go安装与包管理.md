@@ -20,22 +20,22 @@ export GOPATH="/Users/husy/Documents/gopath"
 ```
 
 设置GOPROXY：
-```
+```shell
 go env -w GOPROXY=https://goproxy.io,direct
 ```
 
-开启新terminal后，运行`go env`查看设置情况：
+开启新terminal后，运行`go env`可查看设置情况：
 
 ## 安装第3方包
 
 创建工程目录：
-```
+```shell
 mkdir awesomeProject
 cd awesomeProject
 ```
 
 main.go内容如下：
-```
+```go
 package main
 
 import (
