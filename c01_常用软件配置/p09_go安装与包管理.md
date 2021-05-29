@@ -26,7 +26,7 @@ export GOPATH="/Users/husy/Documents/gopath"
 go env -w GOPROXY=https://goproxy.io,direct
 ```
 
-开启新terminal后，运行`go env`可查看设置情况：
+开启新terminal窗口后，运行`go env`可查看设置情况：
 
 ## 安装第3方包
 
