@@ -22,7 +22,7 @@ var usageDoc = `
     样例2： ./main ~/Downloads
     样例3： ./main ~/Downloads/
     样例4： ./main ~
-			`
+`
 
 func IfElse(cmpRes bool, trueRes interface{}, falseRes interface{}) interface{} {
 	if cmpRes {
