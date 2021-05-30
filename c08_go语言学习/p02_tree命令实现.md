@@ -11,9 +11,10 @@ import (
 	"os"
 	"strings"
 )
+
 /*
 go语言实现的基本tree命令
- */
+*/
 
 var usageDoc = `
 错误的命令行参数！
@@ -34,17 +35,15 @@ func IfElse(cmpRes bool, trueRes interface{}, falseRes interface{}) interface{} 
 func genPerString(markArr []int) string {
 	preString, lenArr := "", len(markArr)
 	for idx, mark := range markArr {
-		if idx != lenArr-1 {
-			mark++
-		}
+		mark += IfElse(idx != lenArr-1, 1, 0).(int)
 		switch mark {
-		case 0: // 0代表是中间的（最末级）
+		case 0: // 0代表是中间的（最末级节点）
 			preString += "├── "
-		case 1: // 1代表是中间的（非最末级节点）
+		case 1: // 1代表是中间的（非末级节点）
 			preString += "│   "
-		case 2: // 2代表是最后一个（最末级）
+		case 2: // 2代表是最后一个（最末级节点）
 			preString += "└── "
-		case 3: // 3代表是最后一个（非最末级节点）
+		case 3: // 3代表是最后一个（非末级节点）
 			preString += "    "
 		}
 	}
@@ -82,10 +81,11 @@ func main() {
 		path := args[1]
 		err := printTree(path, []int{})
 		if err != nil {
-			fmt.Println(err)
+			fmt.Println("Error:", err)
 		}
 	} else {
-		fmt.Println(usageDoc)
+		fmt.Println("Error:", usageDoc)
 	}
 }
+
 ```
