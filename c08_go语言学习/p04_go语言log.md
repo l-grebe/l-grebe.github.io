@@ -76,3 +76,35 @@ ERROR  : 2021/05/30 09:07:42 main.go:31: Something went wrong
 ```
 
 ## logrus简单使用
+
+```go
+package main
+
+import (
+	log "github.com/sirupsen/logrus"
+)
+
+func main() {
+	// 设置日志格式
+	log.SetFormatter(&log.JSONFormatter{})
+	// 设置日志级别
+	log.SetLevel(log.InfoLevel)
+	// 写入相关fields
+	log.WithFields(
+		log.Fields{
+			"foo": "foo",
+			"bar": "bar",
+		},
+	).Info("Something happened")
+	// 日志打印
+	log.Trace("Something very low level.")
+	log.Debug("Useful debugging information.")
+	log.Info("Something noteworthy happened!")
+	log.Warn("You should probably take a look at this.")
+	log.Error("Something failed but I'm not quitting.")
+	// Calls os.Exit(1) after logging
+	log.Fatal("Bye.")
+	// Calls panic() after logging
+	log.Panic("I'm bailing.")
+}
+```
