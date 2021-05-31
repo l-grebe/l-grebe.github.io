@@ -1,11 +1,4 @@
-### 临时记录
-
-```bash
-sudo yum install epel-release -y
-sudo yum install htop -y
-```
-
-```
+# kubectl源码分析
 
 以下为临时数据
 
@@ -36,6 +29,4 @@ kubectl config --kubeconfig=${HOME}/.kube/config use-context admin
 
 # 启用 admin 为默认上下文
 ./kubectl config --kubeconfig=${HOME}/.kube/config use-context admin
-```
-
 ```
