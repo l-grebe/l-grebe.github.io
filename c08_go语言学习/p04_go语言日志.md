@@ -13,7 +13,7 @@ import "log"
 ```shell
 go build main.go
 ./main > 1.log 2>&1
-```
+```go
  */
 
 func main() {
@@ -47,7 +47,7 @@ import (
 ```shell
 go build main.go
 ./main > 1.log 2>&1
-```
+```go
 */
 
 var (
