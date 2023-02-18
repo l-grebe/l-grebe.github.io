@@ -7,6 +7,7 @@ vim配色下载地址：<https://vimcolors.com>
 molokai：
 
 ```shell
+mkdir -p ~/.vim/colors
 cd /tmp && rm -vrf molokai && git clone https://github.com/vim-scripts/molokai.git
 cp -vf ./molokai/colors/molokai.vim ~/.vim/colors/
 rm -vrf molokai
@@ -15,6 +16,7 @@ rm -vrf molokai
 Solarized：
 
 ```shell
+mkdir -p ~/.vim/colors
 cd /tmp && rm -vrf vim-colors-solarized && git clone git://github.com/altercation/vim-colors-solarized.git
 cp -vf ./vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
 rm -vrf vim-colors-solarized
@@ -23,9 +25,19 @@ rm -vrf vim-colors-solarized
 phd:
 
 ```shell
+mkdir -p ~/.vim/colors
 cd /tmp && rm -vrf phd && git clone https://github.com/vim-scripts/phd
 cp -vf ./phd/colors/phd.vim ~/.vim/colors/
 rm -vrf phd
+```
+
+1989:
+
+```shell
+mkdir -p ~/.vim/colors
+cd /tmp && rm -vrf phd && git clone https://github.com/sonjapeterson/1989.vim
+cp -vf ./1989.vim/colors/1989.vim ~/.vim/colors/
+rm -vrf 1989.vim
 ```
 
 
