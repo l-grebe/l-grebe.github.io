@@ -20,7 +20,7 @@ terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 - 翻译：`Translation`
 - mongo插件：`MongoQuery`
 - minimap: `CodeGlance2`
-- `.ignore`
+- gitignore: `.ignore`
 - `Kubernetes`
 - `Grep Console`
 - `Protocol Buffers`
