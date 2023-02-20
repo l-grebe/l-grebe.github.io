@@ -1,4 +1,4 @@
-# kubernetes部署traefik ingress
+# kubernetes部署traefik_ingress
 
 #### 基础信息
 - kubernetes version: v1.19.3
