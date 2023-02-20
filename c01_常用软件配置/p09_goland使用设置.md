@@ -21,7 +21,7 @@ terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 - mongo插件：`MongoQuery`
 - minimap: `CodeGlance2`
 - gitignore: `.ignore`
-- `Kubernetes`
+- kubernetes: `Kubernetes`
 - `Grep Console`
 - `Protocol Buffers`
 - `Makefile Language`
