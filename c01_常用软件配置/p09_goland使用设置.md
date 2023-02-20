@@ -23,6 +23,11 @@ terminal配置路径：`Preferences | Editor | Color Scheme | Console Font`
 - `.ignore`
 - `Kubernetes`
 - `Grep Console`
+- `Protocol Buffers`
+- `Makefile Language`
+- `CSV`
+- `Rainbow Brackets`
+- `Gopher`
 
 ##### 4. goland代理设置：
 设置路径：`Preferences | Appearance & Behavior | System Settings | HTTP Proxy`
