@@ -1,4 +1,4 @@
-# elementoryos dns解析不生效`
+# elementoryos dns解析不生效
 
 #### 基础信息:
 - 问题记录：宿主机已配置dns，网络中其它主机（windows，linuxmint）都能正常通过域名访问kubernetes集群服务，但elementoryos不可以，通过`sudo tcpdump udp`命令，发现dns的包都转到`224.0.0.251.mdns`的地方了，最终发现是`avahi-daemon.service`服务的锅。
