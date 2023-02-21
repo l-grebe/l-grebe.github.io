@@ -6,8 +6,8 @@ import os
 """
 
 
-def gen_row(show_name: str, show_path: str, level: int):
-    return "{}* [{}]({})\n".format("  " * level, show_name, show_path)
+def gen_row(name: str, path: str, level: int):
+    return f'{level * "  "}* [{name}]({path})\n'
 
 
 def get_file_title(file_path):
@@ -24,8 +24,7 @@ def get_file_title(file_path):
         file_name = os.path.basename(file_path)
         if file_name.startswith('p') and str.isdigit(file_name[1]):
             chapter_num = int(''.join(filter(str.isdigit, dir_name)))
-            file_idx = int(
-                ''.join(filter(str.isdigit, file_name.split('_', 1)[0])))
+            file_idx = int(''.join(filter(str.isdigit, file_name.split('_', 1)[0])))
             show_name = '{}.{} '.format(chapter_num, file_idx) + show_name
         return show_name
 
@@ -35,7 +34,7 @@ def list_files(path, level):
     dirs = [i for i in ls_dir if os.path.isdir(os.path.join(path, i))]
     files = [i for i in ls_dir if os.path.isfile(os.path.join(path, i))]
     for d in dirs:
-        if d in ['.git', '.idea', 'venv']:
+        if d in ['.git', '.idea', 'venv', 'static', 'image']:
             continue
         d_path = os.path.join(path, d)
         d_path_readme = os.path.join(d_path, 'README.md')
