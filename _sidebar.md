@@ -60,6 +60,8 @@
   * [8.6 kubectl源码分析](c08_go语言/p06_kubectl源码分析.md)
   * [8.7 函数闭包](c08_go语言/p07_函数闭包.md)
   * [8.8 访问者模式](c08_go语言/p08_访问者模式.md)
+* [第九章 mongodb](c09_mongodb/)
+  * [9.1 mongodb索引实现](c09_mongodb/p01_mongodb索引实现.md)
 * [未归类文档](c99_未归类文档/)
   * [99.1 mac下快捷键记录](c99_未归类文档/p01_mac下常用快捷键.md)
   * [99.3 poker改键记录](c99_未归类文档/p03_poker改键记录.md)
