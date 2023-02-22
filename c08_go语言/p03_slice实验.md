@@ -15,25 +15,30 @@ import (
 
 func main() {
 	var nilSlice []string
-	emptySlice := make([]string, 0)
-
 	jsonNilSlice, _ := json.Marshal(nilSlice)
 	fmt.Println(string(jsonNilSlice)) // null
+	fmt.Println(len(nilSlice))
 
+	emptySlice := make([]string, 0)
 	jsonEmptySlice, _ := json.Marshal(emptySlice)
 	fmt.Println(string(jsonEmptySlice)) // []
+	fmt.Println(len(emptySlice))
 
 	// 判断两slice是否相等
 	fmt.Printf("nilSlice == emptySlice: %t\n", reflect.DeepEqual(nilSlice, emptySlice)) // false
 }
+
 ```
 
 运行结果:
 
 ```text
-nilSlice == emptySlice: false
 null
+0
 []
+0
+nilSlice == emptySlice: false
+
 ```
 
 ### 切片实验
