@@ -1,6 +1,45 @@
-# 切片实验
+# slice实验
+
+### nil slice 和 empty slice 的区别
+
+示例代码：
+
+```go
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"reflect"
+)
+
+func main() {
+	var nilSlice []string
+	emptySlice := make([]string, 0)
+
+	jsonNilSlice, _ := json.Marshal(nilSlice)
+	fmt.Println(string(jsonNilSlice)) // null
+
+	jsonEmptySlice, _ := json.Marshal(emptySlice)
+	fmt.Println(string(jsonEmptySlice)) // []
+
+	// 判断两slice是否相等
+	fmt.Printf("nilSlice == emptySlice: %t\n", reflect.DeepEqual(nilSlice, emptySlice)) // false
+}
+```
+
+运行结果:
+
+```text
+nilSlice == emptySlice: false
+null
+[]
+```
+
+### 切片实验
 
 代码如下：
+
 ```go
 package main
 
@@ -36,6 +75,7 @@ func main() {
 ```
 
 结果如下：
+
 ```
 a: 0xc0000ae010 2 [1 2]
 b: 0xc0000b0040 4 [1 2 3 4]
@@ -52,3 +92,4 @@ d: 0xc0000ae0c0 2 [2 30]
 ```
 
 奇怪的append函数！
+

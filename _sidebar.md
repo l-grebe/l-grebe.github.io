@@ -54,7 +54,7 @@
 * [第八章 go语言学习](c08_go语言/)
   * [8.1 go语言时间相关操作](c08_go语言/p01_时间相关.md)
   * [8.2 go语言实现的tree命令](c08_go语言/p02_tree命令实现.md)
-  * [8.3 切片实验](c08_go语言/p03_切片实验.md)
+  * [8.3 切片实验](c08_go语言/p03_slice实验.md)
   * [8.4 go语言log](c08_go语言/p04_go语言日志.md)
   * [8.5 go常用http请求](c08_go语言/p05_go常用http请求1.md)
   * [8.6 kubectl源码分析](c08_go语言/p06_kubectl源码分析.md)
