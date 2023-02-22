@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	nilMap := new(map[string]string)
+	var nilMap map[string]string
 	emptyMap := make(map[string]string)
 
 	jsonNilMap, _ := json.Marshal(nilMap)
