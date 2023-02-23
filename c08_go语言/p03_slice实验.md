@@ -1,5 +1,7 @@
 # slice实验
 
+question: json序列化的时候，数组类型怎么实现"[]"的效果？下面的示例代码会有答案。
+
 ### nil slice 和 empty slice 的区别
 
 示例代码：
@@ -26,6 +28,11 @@ func main() {
 
 	// 判断两slice是否相等
 	fmt.Printf("nilSlice == emptySlice: %t\n", reflect.DeepEqual(nilSlice, emptySlice)) // false
+
+	nilSlice = append(nilSlice, "hello")
+	emptySlice = append(emptySlice, "hello")
+	fmt.Println(nilSlice)   // null
+	fmt.Println(emptySlice) // null
 }
 
 ```
@@ -38,6 +45,8 @@ null
 []
 0
 nilSlice == emptySlice: false
+[hello]
+[hello]
 
 ```
 
