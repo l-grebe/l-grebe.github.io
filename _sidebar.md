@@ -56,7 +56,7 @@
   * [8.2 go语言实现的tree命令](c08_go语言/p02_tree命令实现.md)
   * [8.3 slice实验](c08_go语言/p03_slice实验.md)
   * [8.4 map实验](c08_go语言/p04_map实验.md)
-  * [8.5 go常用http请求](c08_go语言/p05_go常用http请求1.md)
+  * [8.5 go常用http请求](c08_go语言/p21_go常用http请求1.md)
   * [8.6 kubectl源码分析](c08_go语言/p06_kubectl源码分析.md)
   * [8.7 函数闭包](c08_go语言/p07_函数闭包.md)
   * [8.8 访问者模式](c08_go语言/p08_访问者模式.md)
