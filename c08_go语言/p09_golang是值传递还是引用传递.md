@@ -6,7 +6,7 @@
 
 而Go语言中的一些让你觉得它是引用传递的原因，是因为Go语言有值类型和引用类型，但是它们都是值传递。
 
-- 值类型 - int、float、bool、string、array、sturct等
+- 值类型 - int、float、bool、string、array、struct等
 
 - 引用类型 - slice，map，channel，interface，func等
 
