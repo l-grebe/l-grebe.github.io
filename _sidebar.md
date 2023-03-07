@@ -44,7 +44,7 @@
   * [5.4 将kubernetes内部网络和办公网络打通](c05_生产集群搭建/p04_将kubernetes内部网络和办公网络打通.md)
   * [5.5 ElementoryOS内gethostbyname解析不了kuberntes域名问题处理](c05_生产集群搭建/p05_ElementoryOS解析k8s集群域名不生效.md)
   * [5.6 elasticsearch 操作文档](c05_生产集群搭建/p06_elasticsearch操作文档.md)
-  * [5.7 elementoryos dns解析不生效](c05_生产集群搭建/p07_elementoryos dns解析不生效.md)
+  * [5.7 elementoryos的dns解析不生效](c05_生产集群搭建/p07_elementoryos的dns解析不生效.md)
   * [5.8 kubernetes部署traefik_ingress](c05_生产集群搭建/p08_kubernetes部署traefik_ingress.md)
 * [第六章 Linux命令使用记录](c06_linux命令使用记录/)
   * [6.1 tee 命令](c06_linux命令使用记录/p01_tee命令.md)
