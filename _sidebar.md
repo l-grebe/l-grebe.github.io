@@ -64,6 +64,7 @@
   * [8.20 go语言log](c08_go语言/p20_go语言日志.md)
   * [8.21 go常用http请求](c08_go语言/p21_go常用http请求1.md)
   * [8.22 go语言实现的tree命令](c08_go语言/p22_tree命令实现.md)
+  * [8.23 go常见坑](c08_go语言/p23_go常见坑.md)
 * [第九章 mongodb](c09_mongodb/)
   * [9.1 mongodb索引实现](c09_mongodb/p01_mongodb索引实现.md)
 * [未归类文档](c99_未归类文档/)
