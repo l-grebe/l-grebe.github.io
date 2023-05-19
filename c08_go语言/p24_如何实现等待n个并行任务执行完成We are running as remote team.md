@@ -146,3 +146,28 @@ func main() {
 }
 
 ```
+
+运行结果：
+```text
+deal the paper analysis time cost = 2.875µs
+deal the item 0_3 analysis time cost = 2.001146708s
+deal the item 0_1 analysis time cost = 4.001084083s
+deal the item 0_2 analysis time cost = 4.001064583s
+deal the item list analysis time cost = 4.001680292s
+
+deal the item 3_1 analysis time cost = 1.001072375s
+deal the item 2_1 analysis time cost = 3.000660333s
+deal the item 1_1 analysis time cost = 3.000699833s
+deal the item list analysis time cost = 3.000877709s
+
+deal the item 4_1 analysis time cost = 2.042µs
+deal the item 5_1 analysis time cost = 1.001063875s
+deal the item 6_1 analysis time cost = 3.00122625s
+deal the item list analysis time cost = 3.001351083s
+
+deal the item 7_1 analysis time cost = 2.001082875s
+deal the item list analysis time cost = 2.001198917s
+
+deal the item list analysis time cost = 12.005204084s
+
+```
