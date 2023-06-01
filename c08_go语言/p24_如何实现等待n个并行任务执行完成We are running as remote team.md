@@ -67,7 +67,7 @@ type ItemAnaList []*ItemAna
 // Analysis 并发的处理每个小问的分析
 func (p *ItemAnaList) Analysis() bsonM {
 	defer TimeCost("deal the item list analysis", time.Now())
-	ch := make(chan *itemAnaResult)
+	ch := make(chan *itemAnaResult, p.Len())
 	res := make(bsonM)
 	for _, item := range *p {
 		go item.AnalysisByGoroutine(ch)
