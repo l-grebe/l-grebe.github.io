@@ -11,6 +11,8 @@ docker run --name swagger-ui --restart always -p 7070:8080 -d swaggerapi/swagger
 
 2.访问 swagger-ui 地址 http://vmmint.com:7070，输入 kube-apiserver 地址的 openapi 接口地址：https://vmmint.com:6443/openapi/v2
 
+> 注意：先要确保本地能正常访问https://vmmint.com:6443/openapi/v2接口数据
+
 > 注意：直接访问存在跨域问题，需要安装 Chrome 的 Allow CORS 插件实现跨域访问
 > 
 > 插件传送门：<https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en>
